@@ -100,7 +100,6 @@ ul li{
 .sub-banner
 {
     align-items: center;
-    /* max-width: 1140px; */
 }
 .image-container
 {
@@ -157,6 +156,12 @@ ul li{
 {
     max-width: 542px;
 }
+.facts-container2
+{
+    max-width: 542px;
+    margin: 0 auto;
+
+}
 .facts
 {
     justify-content: space-around;
@@ -181,13 +186,34 @@ ul li{
 {
     margin-top: 10px;
 }
+.sponsor-head
+{
+    text-align: center;
+}
+.sponsor-img
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    filter: grayscale(100%);
+
+}
 /* responsive media query */
 @media screen and (max-width:576px){
     .navbar, .nav-links, .sub-banner {
         flex-direction: column;}
-    .image-container
+    .image-container,
+    .facts, 
+    .sponsor-img
     {
         grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    .facts
+    {
+        justify-items: center;
+        gap: 24px;
     }
     .our-features
     {
