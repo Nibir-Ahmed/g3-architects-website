@@ -1,4 +1,11 @@
-
+main
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px ;
+}
 .work-sans-normal {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -32,13 +39,21 @@ ul li{
 {
     color: #424242;
 }
+.color-dark3
+{
+    color: #727272;
+}
+.color-3
+{
+    color: #FF900E;
+}
 .bg-color
 {
     background-color:  rgba(255, 143, 14, 0.1);
 }
 .brand
 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
 }
 .navbar
@@ -60,7 +75,7 @@ ul li{
 }
 .navbar, .banner
 {
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0px 50px;
 
@@ -75,14 +90,46 @@ ul li{
 }
 .banner-title
 {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 700;
 }
 .image-size
 {
    width: 100%;
 }
-/* responsive media query */
-@media screen and(max-width:){
+.sub-banner
+{
+    align-items: center;
+    /* max-width: 1140px; */
+}
+.image-container
+{
+    display: grid;
+    gap:24px;
+    grid-template-columns: repeat(2,1fr);
+}
+.our-features
+{
+    max-width: 550px;
+    margin-left: 73px;
     
+}
+.feature-title
+{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list
+{
+   font-weight: 500;
+}
+.feature-description
+{
+    font-size: 1rem;
+}
+/* responsive media query */
+@media screen and (max-width:576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
