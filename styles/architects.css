@@ -6,6 +6,10 @@ main
 main > section{
     margin-top: 130px ;
 }
+.box-shadow
+{
+    box-shadow:0 5px 100px 0 rgba(0, 0, 0, 0.25) ;
+}
 .work-sans-normal {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -22,7 +26,18 @@ main > section{
     border-radius: 8px;
     background-color: #FF900E;
     color:#FFFFFF ;
-
+}
+.primary-btn2
+{
+    width: 300px;
+    height: 160px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color:#FFFFFF ;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: -80px;
 }
 .display-flex
 {
@@ -133,15 +148,51 @@ ul li{
 {
     font-size: 1rem;
 }
-.ex-feat-title
+.extended-feature-container
 {
-   max-width: 468px;
-   height: 106px;
+    /* max-height: 1069px; */
+    gap: 100px;
+}
+.button-style
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.button-style2
+{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    
+}
+
+.extra-feat
+{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 1px 20px ;
+}
+.architect-img
+{
+    max-height: 992px;
+    max-width: 500px;
 }
 .extended-feature
 {
   max-width: 586px;
-  height: 982px;
+  max-height: 982px;
+}
+.ex-feat-title
+{
+    max-width: 468px;
+    height: 106px;
+}
+#ex-section-title
+{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
 }
 .features-provide
 {
@@ -161,6 +212,10 @@ ul li{
     max-width: 542px;
     margin: 0 auto;
 
+}
+.architect-img img
+{
+    width: 100%;
 }
 .facts
 {
@@ -198,17 +253,49 @@ ul li{
     filter: grayscale(100%);
 
 }
+.footer-size
+{
+    width: 620px;
+    height: 23px;
+    padding: 39px 410px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.footer-container
+{
+    margin-top: 50px;
+}
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar, .nav-links, .sub-banner {
-        flex-direction: column;}
+    .navbar,
+    .nav-links, 
+    .sub-banner, 
+    .extended-feature-container, 
+    .some-facts,
+    .architect-img,
+    .some-facts
+     {
+        flex-direction: column;
+    }
+    .architect-img
+    {
+        
+        margin: 0 auto;
+        
+
+    }
     .image-container,
-    .facts, 
+    .some-facts
+    .facts,
     .sponsor-img
     {
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    .footer-container
+    {
+        display: none;
     }
     .facts
     {
@@ -219,8 +306,15 @@ ul li{
     {
         margin-left: 20px;
     }
+    .primary-btn2
+    {
+        margin: 20px;
+        margin-left: 50px;
+        
+    }
 
 }
+
 @media screen and (min-width:576px) and (max-width:992px) {
     .sub-banner {
         flex-direction: column;
